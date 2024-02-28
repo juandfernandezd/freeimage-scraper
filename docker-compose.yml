@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  scrapper:
+    build:
+      context: .
+    volumes:
+      - ./app:/app
+    command: >
+      sh -c "python scraper.py"
