@@ -2,7 +2,7 @@ import sqlite3
 
 
 def init_db():
-    connection = sqlite3.connect('images.db')
+    connection = sqlite3.connect('app_db.db')
     cursor = connection.cursor()
     cursor.execute('''CREATE TABLE IF NOT EXISTS images 
                       (id INTEGER PRIMARY KEY, url TEXT)''')
